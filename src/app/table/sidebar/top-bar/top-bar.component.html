@@ -1,0 +1,59 @@
+<div class="flex align-items-center border-bottom-2  shadow-3 m-0 px-5 py-10 " style="color: rgb(0, 0, 0); height: 100px;">
+  <div class="flex">
+    <button (click)="toggleSidebar()" class="border-none">
+    <i class="pi pi-bars m-0" style="font-size: 24px; font-weight: bold;"></i>
+  </button>
+  </div>
+  <div class="flex-grow-1">
+    <p id="title">Barcode Scanner</p>
+  </div>
+  <div class="flex menu-panel">
+    <div class="search-bar" >
+      <button class="search-icon w-2rem h-2rem border-1 border-round  " (click)="toggleSearch()" pTooltip="Search" tooltipPosition="left">
+        <i class="pi pi-search"></i>
+      </button>
+      <input *ngIf="showInputBar" type="text"  placeholder="Search" class=" ml-2 p-component border-none h-3rem sm:h-2rem w-5rem sm:w-15rem" spellcheck="false">
+    </div>
+    <div class="add ml-2" >
+      <button class="add-icon w-2rem h-2rem border-1 border-round" pTooltip="Add" tooltipPosition="left">
+        <i class="pi pi-plus "></i>
+      </button>
+    </div>
+    <!-- <div class="delete ml-2" >
+      <button class="delete-icon w-2rem h-2rem border-1 border-round">
+        <i class="pi pi-trash "></i>
+      </button>
+    </div> -->
+    <div class="add ml-2" >
+      <button class="add-icon w-2rem h-2rem border-1 border-round" pTooltip="Update" tooltipPosition="left">
+        <i class="pi pi-file-edit "></i>
+      </button>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

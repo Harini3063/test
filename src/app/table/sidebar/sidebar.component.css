@@ -1,0 +1,49 @@
+.overflow-y-auto{
+  overflow-y: auto;
+}
+div{
+  display: block;
+}
+
+.p-ripple:hover {
+  background-color: #f0f0f0;
+}
+
+
+.p-ripple:hover i, .p-ripple:hover span
+{
+  color: #367588;
+
+}
+
+.sidebar-expanded{
+  width: 15%;
+  height: 100vh;
+  border-right: 2cm black;
+  background-color: rgb(214, 219, 219);
+
+}
+.sidebar-collapsed{
+width: 5%;
+height: 100vh;
+border-right: 2cm black;
+  background-color: rgb(214, 219, 219);
+}
+
+.table-container
+{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tooltip {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 14px;
+  z-index: 9999;
+}
+
+

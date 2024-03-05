@@ -1,0 +1,21 @@
+
+#title{
+  display:block;
+  font-family: 'VT323', monospace;
+  text-align: center;
+  margin: 0;
+  font-size: 80px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: rgb(40, 38, 38);
+  text-shadow: 6px 8px 4px rgba(151, 150, 146, 0.83);
+}
+.search-bar:hover button,.add:hover button,.delete:hover button{
+  box-shadow: 0 0 10px rgb(97, 96, 96);
+}
+.search-icon .pi,.add-icon .pi,.delete-icon .pi{
+  font: 20px;
+  font-weight: bold;
+}
+
+

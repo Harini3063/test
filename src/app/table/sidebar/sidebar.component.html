@@ -1,0 +1,61 @@
+<div class="flex flex-row h-full" >
+  <div  class="{{ sidebarShow ? 'sidebar-expanded' : 'sidebar-collapsed'}} " >
+
+    <div class="flex align-items-center px-4 flex-shrink-0 border-bottom-1 " style="height: 80px;">
+        <img src="assets/barcodelogo.png" alt="Image" height="40">
+        <span class="{{sidebarShow ? 'medium text-xl font-semibold ml-2': 'hidden'}}">Barcode Scanner</span>
+    </div>
+    <div class="overflow-y-auto">
+        <ul class="list-none p-0 m-0">
+          <li>
+            <div class="p-ripple p-element p-3 flex align-items-center justify-content-center cursor-pointer  border-bottom-1 "  >
+              <i class="pi pi-home  font-semibold text-xl px-2" pTooltip="Home"></i>
+              <span class="{{sidebarShow ? 'medium text-xl font-semibold ml-2': 'hidden'}}">Home</span>
+              <!-- <span class="{{!sidebarShow? 'tooltip' : 'hidden'}}">Home</span> -->
+
+            </div>
+          </li >
+          <li >
+            <div class="p-ripple p-element p-3 flex align-items-center justify-content-center text-600 cursor-pointer border-bottom-1" >
+              <i class="pi pi-search font-semibold text-xl px-2" pTooltip="Search"></i>
+              <span class="{{sidebarShow ? 'medium text-xl font-semibold ml-2': 'hidden'}}">Search</span>
+              <!-- <span class="{{!sidebarShow? 'tooltip' : 'hidden'}}">Search</span> -->
+            </div>
+          </li>
+          <li >
+            <div class="p-ripple p-element p-3 flex align-items-center justify-content-center text-600 cursor-pointer border-bottom-1"  >
+              <p-button (click)="addPannelShow = true" >
+              <i class="pi pi-plus font-semibold text-xl px-2" pTooltip="Add"></i>
+              <span class="{{sidebarShow ? 'medium text-xl font-semibold ml-2': 'hidden'}}">Add</span>
+            </p-button>
+              <!-- <span class="{{!sidebarShow? 'tooltip' : 'hidden'}}">Add</span> -->
+            </div>
+          </li>
+          <!-- <li >
+            <div class="p-ripple p-element p-3 flex align-items-center justify-content-center text-600 cursor-pointer border-bottom-1">
+              <i class="pi pi-trash font-semibold text-xl px-2 align-items-start"></i>
+              <span class="{{sidebarShow ? 'medium text-xl font-semibold ml-2': 'hidden'}}">Delete</span>
+            </div>
+          </li> -->
+          <li >
+            <div class="p-ripple p-element p-3 flex align-items-center justify-content-center text-600 cursor-pointer border-bottom-1" >
+
+              <i class="pi pi-file-edit font-semibold text-xl px-2" pTooltip="Update"></i>
+              <span class="{{sidebarShow ? 'medium text-xl font-semibold ml-2': 'hidden'}}">Update</span>
+              <!-- <span class="{{!sidebarShow? 'tooltip' : 'hidden'}}">Update</span> -->
+            </div>
+          </li>
+        </ul>
+    </div>
+  </div>
+  <div class="table-container flex justify-content-center align-items-center">
+
+  </div>
+  <p-sidebar [(visible)]="addPannelShow" position="right">
+    <h2>Add Pannel</h2>
+    <p>
+        add the details
+    </p>
+  </p-sidebar>
+</div>
+
